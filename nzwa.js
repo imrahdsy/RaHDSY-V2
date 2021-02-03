@@ -91,13 +91,13 @@ const { limit } = require('./database/menu/limit')
 // Load Vcard Contact
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Nazwa🖤\n' // full name
+            + 'FN:Rahadian😎\n' // full name
             + 'ORG:Owner Bot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=12542123926:+1 (254) 212-3926\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=6285229174013:+62 852-2917-4013\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 prefix = '.'
 blocked = []
-limitawal = '20'
+limitawal = '30'
 cr = '*Verified*'
 
 // Functions
@@ -383,7 +383,7 @@ async function starts() {
 					ownerB: '[❗] Perintah ini hanya bisa di gunakan oleh owner bot! ❌',
 					admin: '[❗] Perintah ini hanya bisa di gunakan oleh admin group! ❌',
 					Badmin: '[❗] Perintah ini hanya bisa di gunakan ketika bot menjadi admin! ❌',
-                                        daftarB: `──「 BELUM REGISTER 」──\nHalo kak !\nKamu belum Register nih, register dulu yuk... \n\nCommand : ${prefix}register nama|umur\nContoh : ${prefix}register Nazwa|16`,
+                                        daftarB: `──「 BELUM REGISTER 」──\nHalo kak !\nKamu belum Register nih, register dulu yuk... \n\nCommand : ${prefix}register nama|umur\nContoh : ${prefix}register Candra|17`,
 				}
 			}
     			const apakah = ['Ya','Tidak']
@@ -407,7 +407,7 @@ async function starts() {
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
-                        const NomerOwner = '12542123926@s.whatsapp.net'
+                        const NomerOwner = '6285229174013@s.whatsapp.net'
                         const isEventon = isGroup ? event.includes(from) : false
                         const isRegister = checkRegisteredUser(sender)
                         pushname = client.contacts[sender] != undefined ? client.contacts[sender].vname || client.contacts[sender].notify : undefined
@@ -1118,7 +1118,7 @@ async function starts() {
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 Mention All 〙✪══\n╠➥'+teks+'╚═〘 - - - - 〙', members_id, true)
+					mentions('╔══〘 Mention All 〙══\n╠➥'+teks+'╚═〘 - - - - 〙', members_id, true)
 					break
                 case 'tagall2':
 				client.updatePresence(from, Presence.composing) 
@@ -1131,7 +1131,7 @@ async function starts() {
 						teks += `╠➥ ${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mention All 〙✪══\n╠➥'+teks+'╚═〘 - - - - 〙', text, {quoted: mek})
+					client.sendMessage(from, '╔══〘 Mention All 〙══\n╠➥'+teks+'╚═〘 - - - - 〙', text, {quoted: mek})
 					break
                 case 'tagall3':
 				client.updatePresence(from, Presence.composing) 
@@ -1144,7 +1144,7 @@ async function starts() {
 						teks += `╠➥ https://wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mention All 〙✪══\n╠➥'+teks+'╚═〘 - - - - - 〙', text, {detectLinks: false, quoted: mek})
+					client.sendMessage(from, '╔══〘 Mention All 〙══\n╠➥'+teks+'╚═〘 - - - - - 〙', text, {detectLinks: false, quoted: mek})
 					break
                         case 'tagall4':
 				client.updatePresence(from, Presence.composing) 
@@ -1157,7 +1157,7 @@ async function starts() {
 						teks += `╠➥ ${mem.jid.split('@')[0]}@c.us\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mention All 〙✪══\n╠➥'+teks+'╚═〘 - - - - - 〙', text, {quoted: mek})
+					client.sendMessage(from, '╔══〘 Mention All 〙══\n╠➥'+teks+'╚═〘 - - - - - 〙', text, {quoted: mek})
 					break
                 case 'tagall5':
 				client.updatePresence(from, Presence.composing) 
@@ -1170,7 +1170,7 @@ async function starts() {
 						teks += `╠➥ ${mem.jid.split('@')[0]}@s.whatsapp.net\n`
 						members_id.push(mem.jid)
 					}
-					reply('╔══✪〘 Mention All 〙✪══\n╠➥'+teks+'╚═〘 - - - - - 〙')
+					reply('╔══〘 Mention All 〙══\n╠➥'+teks+'╚═〘 - - - - - 〙')
 					break
 				case 'send':
 					var pc = body.slice(6)
