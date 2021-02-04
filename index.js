@@ -7,14 +7,14 @@ CFonts.say('WHATSAPP BOT', {
   align: 'center',
   gradient: ['red', 'magenta']
 })
-CFonts.say('\'termux-whatsapp-bot\' By @NazwaS', {
+CFonts.say('\'termux-whatsapp-bot\' By @im.cand_20', {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
 })
 
 function start() {
-  let args = [path.join(__dirname, 'nzwa.js'), ...process.argv.slice(2)]
+  let args = [path.join(__dirname, 'rhdsy.js'), ...process.argv.slice(2)]
   CFonts.say([process.argv[0], ...args].join(' '), {
     font: 'console',
     align: 'center',
